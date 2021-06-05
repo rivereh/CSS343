@@ -5,6 +5,11 @@ int Item::getCount()
     return count;
 }
 
+int Item::hashItem()
+{
+    return year % 10;
+}
+
 void Item::setCountBy(int amount)
 {
     count += amount;

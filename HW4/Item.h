@@ -14,9 +14,9 @@ using namespace std;
 class Item
 {
 public:
-    virtual int hashItem() = 0;
     virtual void print(ostream&) = 0;
     virtual string getListRepresentation() = 0;
+    int hashItem();
     int getCount();
     void setCountBy(int);
 protected:

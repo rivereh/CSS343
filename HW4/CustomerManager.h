@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 // CUSTOMERMANAGER.H
-// Class used to represent a stores' inventory. Allows
-// user to perform store operations and manage customers.
+// A class to manage a stores customers. Allows operations to add customers
+// and find customers in the list.
 // Author: River Hill
 //---------------------------------------------------------------------------
 
