@@ -42,10 +42,10 @@ void Customer::listTransactions()
 {
     cout << "Customer " << id << ":" << name << endl;
     if (transactions.size() == 0)
-        cout << "No transactions on record!" << endl;
+        cout << "  No transactions on record" << endl;
     else
         for (string transaction : transactions)
-                cout << transaction << endl;
+                cout << "  - " << transaction << endl;
     cout << endl;
 }
 

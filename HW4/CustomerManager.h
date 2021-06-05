@@ -17,25 +17,24 @@ class CustomerManager
 {
     vector<Customer *> customers;
 public:
-    void addCustomer(Customer* customer)
-    {
-        customers.push_back(customer);
-    }
-    
-    Customer* findCustomer(int id)
-    {
-        for(Customer* customer : customers)
-        {
-            if (id == customer->getId())
-                return customer;
-        }
-        return nullptr;
-    }
 
-    vector<Customer *> *getCustomers()
-    {
-        return &customers;
-    }
+    //-------------------------- addCustomer -------------------------------------------
+    // A function to add a Customer to the list of customers
+    // Preconditions:   A valid Customer pointer
+    // PostConditions:  A new CustomerManager will be added to the list
+    void addCustomer(Customer*);
+    
+    //-------------------------- findCustomer -------------------------------------------
+    // A function to find a customer in the list of customers
+    // Preconditions:   A valid id int
+    // PostConditions:  Will return the pointer to the customer in the list if found
+    Customer* findCustomer(int);
+
+    //-------------------------- getCustomers -------------------------------------------
+    // A function to get the vector containing all of the customers
+    // Preconditions:   None
+    // PostConditions:  The customers list will be returned
+    vector<Customer *> *getCustomers();
 };
 
 #endif
