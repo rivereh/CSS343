@@ -34,5 +34,5 @@ string Card::getListRepresentation()
 // PostConditions:  Will provide a representation of the object to be printed
 void Card::print(ostream& os)
 {
-    os << year << "," << grade << "," << player << "," << manufacturer;
+    os << count << ", " << year << "," << grade << "," << player << "," << manufacturer;
 }

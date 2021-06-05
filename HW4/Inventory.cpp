@@ -105,14 +105,10 @@ void Inventory::print()
         {
             for (auto item : arr[i])
             {
-                for(int i = 0; i < item->getCount(); i++)
-                {
-                    cout << *item;
-                    cout << endl;
-                }
+                cout << *item;
             }
             cout << endl;
         }
     }
-    cout << "----------------------------------------------------------" << endl << endl;
+    cout << endl << "----------------------------------------------------------" << endl << endl;
 }

@@ -32,5 +32,5 @@ string Coin::getListRepresentation()
 // PostConditions:  Will provide a representation of the object to be printed
 void Coin::print(ostream& os)
 {
-    os << year << ", " << grade << "," << type;
+    os << count << ", " << year << ", " << grade << "," << type;
 }

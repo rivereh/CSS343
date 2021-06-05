@@ -34,5 +34,5 @@ string Comic::getListRepresentation()
 // PostConditions:  Will provide a representation of the object to be printed
 void Comic::print(ostream& os)
 {
-    os << year << "," << grade << "," << title << "," << publisher;
+    os << count << ", " << year << "," << grade << "," << title << "," << publisher;
 }

@@ -165,7 +165,11 @@ void runCommands(string file, Inventory* inventory, CustomerManager* customers)
                     getline(lineStream, customerId, ',');
                     tempCustomer = customers->findCustomer(stoi(customerId));
                     if (tempCustomer != nullptr)
+                    {
+                        cout << "-------------- Listing Customer Transactions -------------" << endl << endl;
                         tempCustomer->listTransactions();
+                        cout << "----------------------------------------------------------" << endl << endl;
+                    }
                     break;
                 case 'D':
                     inventory->print();
